@@ -4,7 +4,7 @@
   "description": "Ui tests with cypress for the bynder website",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "cypress run --config-file=cypress.config.js",
     "cypress:open": "cypress open"
   },
   "author": "",
