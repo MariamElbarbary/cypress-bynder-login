@@ -10,6 +10,7 @@ module.exports = defineConfig({
     },
     baseUrl: 'https://wave-trial.getbynder.com/',
     supportFile: "cypress/support/e2e.js",
+    video:false
     env: {
       username: "mariam.elbarbary@rabobank.nl",
       password: "Wa7shteny@11"
