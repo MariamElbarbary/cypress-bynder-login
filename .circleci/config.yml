@@ -33,6 +33,6 @@ jobs:
       - store_test_results:
           path: multiple-results
       - store_artifacts:
-          path: cypress/videos
+          path: multiple-results/videos
       - store_artifacts:
-          path: cypress/screenshots
+          path: multiple-results/screenshots
