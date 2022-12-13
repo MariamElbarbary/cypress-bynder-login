@@ -9,7 +9,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'https://wave-trial.getbynder.com/',
-    video: false,
     supportFile: "cypress/support/e2e.js",
     env: {
       username: "mariam.elbarbary@rabobank.nl",
