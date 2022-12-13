@@ -17,10 +17,10 @@ To run the project in a docker container
 
 `docker run -it -v $PWD:/e2e -w /e2e cypress/included:12.0.2 $@
 `
-
-To run tests from the docker-compose file run
-`docker-compose up --exit-code-from cypress
-
-note the docker-compose file doesn't work properly as since the latest changes in cypress they changed the config file to js file instead of config.json 
-I do think inside the docker image somehow it still search for a json, it needs abit more investigation
+To run tests from the Dockerfile run
+`docker build -t cypress:bynder .` then
+`docker run -t --name cypressContainer cypress:bynder /bin/bash
 `
+
+The project is running in Ci/CD on circleci you can access it from here
+[https://app.circleci.com/pipelines/github/MariamElbarbary/cypress-bynder-login?branch=main]()
