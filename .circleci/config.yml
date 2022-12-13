@@ -1,7 +1,26 @@
 version: 2.1
-orbs:
-  cypress: cypress-io/cypress@1
+
+# https://circleci.com/docs/2.0/executor-intro/
+executors:
+  ci-image:
+    docker:
+      - image: cypress/base:16.14.2
+
+jobs:
+  install-cypress:
+    executor: ci-image
+    steps:
+      - checkout
+      - run:
+          name: Install cypress dependencies
+          command: npm ci
+          working_directory: /cypress
+      - run:
+          name: Check Cypress
+          command: npx cypress verify
+          working_directory: e2e
 workflows:
-  build:
+  version: 2.1
+  build-and-test:
     jobs:
-      - cypress/run
+      - install-cypress
