@@ -14,11 +14,11 @@ jobs:
       - run:
           name: Install cypress dependencies
           command: npm i
-          working_directory: /cypress
+          working_directory: $PWD
       - run:
           name: Check Cypress
           command: npx cypress verify
-          working_directory: e2e
+          working_directory: $PWD
 workflows:
   version: 2.1
   build-and-test:
