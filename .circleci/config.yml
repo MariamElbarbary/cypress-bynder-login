@@ -19,6 +19,10 @@ jobs:
           name: Check Cypress
           command: npx cypress verify
           working_directory: $PWD
+      - run:
+          name: Run tests
+          command: npm run test
+          working_directory: $PWD
 workflows:
   version: 2.1
   build-and-test:
