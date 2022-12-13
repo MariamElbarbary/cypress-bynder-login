@@ -13,7 +13,7 @@ jobs:
       - checkout
       - run:
           name: Install cypress dependencies
-          command: npm ci
+          command: npm i
           working_directory: /cypress
       - run:
           name: Check Cypress
