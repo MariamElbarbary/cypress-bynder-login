@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d29ca17a-44f6-47bb-baed-3cd4dcf266ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <updated>1670702498440</updated>
       <workItem from="1670702500907" duration="6307000" />
       <workItem from="1670881730251" duration="2809000" />
-      <workItem from="1670895337346" duration="99000" />
+      <workItem from="1670895337346" duration="146000" />
     </task>
     <servers />
   </component>
